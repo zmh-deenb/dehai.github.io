@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+.box {
+    width: 1300px;
+    height: 900px;
+    margin: 0 auto;
+}
+
+/* 头部 */
+.box .top {
+    text-align: center;
+}
+
+.box .top .topText {
+    margin-top: 30px;
+    display: flex;
+}
+
+.box .top .topText .a {
+
+    margin-left: 460px;
+}
+
+.box .top .topText .b {
+    margin-left: 300px;
+    cursor: pointer;
+}
+
+.box .top .topText .b:hover {
+    color: rgb(169, 169, 169);
+}
+
+
+/* 主体 */
+
+.box .subjct {
+    width: 1300px;
+    height: 900px;
+    margin-top: 60px;
+}
+
+.box .subjct ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* 展示 */
+.mask {
+    position: relative;
+
+    width: 300px;
+    height: 240px;
+
+    margin-bottom: 25px;
+
+    background-color: rgb(255, 255, 255);
+
+    cursor: pointer;
+}
+
+.fire {
+    text-align: center;
+    line-height: 30px;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    position: absolute;
+    display: inline-block;
+
+    color: rgb(254, 0, 0);
+    background: linear-gradient(-45deg, rgb(255, 165, 91), #fff);
+    left: 0;
+
+    border-radius: 0 0 5px 0;
+}
+
+.taste {
+    text-align: center;
+    line-height: 30px;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    position: absolute;
+    display: inline-block;
+
+    color: rgb(0, 119, 254);
+    background: linear-gradient(-45deg, rgb(182, 239, 255), #fff);
+
+    right: 0;
+    bottom: 40px;
+
+    border-radius: 5px 0 0 0;
+}
+
+.amask {
+    position: relative;
+    text-align: center;
+}
+
+.amask a {
+
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
+
+}
+
+.sbox {
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    color: #fff;
+    background: linear-gradient(90deg, #F83600, #F9D423);
+    left: 40px;
+    top: 5px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+}
+
+/* 动画 */
+.mask:hover .big {
+    display: block;
+    z-index: 999;
+}
+
+/* 放大 */
+.big {
+
+    /* border: #000 solid 0.5px; */
+
+    position: absolute;
+
+    top: -85px;
+
+    width: 300px;
+    height: 430px;
+
+    display: none;
+
+    border-radius: 5px;
+
+    background-color: rgb(255, 255, 255);
+
+    transition: all 0.3s;
+}
+
+
+.big:hover {
+    box-shadow: 0px 3px 4px 3px rgba(0, 0, 0, 0.2);
+    transform: scale(1.2);
+}
+
+.tp {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+}
+
+.text {
+    margin: 0 auto;
+
+    width: 280px;
+}
+
+.fText {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+/* 适应人群 */
+.crowd {
+    width: 280px;
+
+    height: 30px;
+    line-height: 30px;
+
+
+
+
+    margin-bottom: 2px;
+}
+
+.people1 {
+    /* border: 0.5px solid; */
+    color: blue;
+
+    font-size: 16px;
+
+}
+
+.people2 {
+    /* border: 0.5px solid; */
+    color: blue;
+    background-color: rgb(213, 218, 255);
+    font-size: 12px;
+
+    border-radius: 5px;
+
+}
+
+/* 作用 */
+.effect {
+    width: 50px;
+    margin-left: 15px;
+    cursor: pointer;
+    color: #019a18;
+}
+
+
+.action {
+    width: 300px;
+    font-size: 13px;
+    /* color: #cd4e1c; */
+}
+
+
+/* 名称 */
+.fText {
+    display: flex;
+}
+
+.text a {
+    text-align: center;
+    line-height: 40px;
+    width: 120px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 119, 0);
+    margin-left: 15px;
+
+    background: linear-gradient(-45deg, rgb(255, 234, 196), rgb(255, 255, 255));
+
+    border-radius: 5px;
+}
+
+.text a:hover {
+    color: red;
+}
+
+/* 文本 */
+.inText {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgb(111, 111, 111);
+    width: 280px;
+    height: 60px;
+
+    text-align: center;
+}
+
+/* 其他 */
+.boxb {
+    margin: 0 auto 5px;
+    width: 280px;
+    height: 25px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 0 0 5px 5px;
+}
+
+.qt {
+    line-height: 25px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.qt:hover {
+    color: #777777;
+}
+
+.dq {
+    width: 40px;
+    color: #fff;
+    background: linear-gradient(90deg, #F83600, #F9D423);
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+}
